@@ -17,7 +17,7 @@ Bundle 'msanders/snipmate.vim'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-git'
 Bundle 'ervandew/supertab'
-Bundle 'sontek/minibufexpl.vim'
+" Bundle 'sontek/minibufexpl.vim'
 Bundle 'wincent/Command-T'
 Bundle 'mitechie/pyflakes-pathogen'
 Bundle 'mileszs/ack.vim'
@@ -29,6 +29,8 @@ Bundle 'reinh/vim-makegreen'
 Bundle 'vim-scripts/The-NERD-tree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'sontek/rope-vim'
+Bundle 'vim-scripts/DoxygenToolkit.vim'
+Bundle "Chiel92/vim-autoformat"
 
 filetype off
 "call pathogen#incubate()
@@ -83,3 +85,5 @@ let NERDSpaceDelims = 1
 nmap <silent> <C-K> <Plug>NERDCommenterToggle
 vmap <silent> <C-K> <Plug>NERDCommenterToggle
 
+"Doxygen
+let g:DoxygenToolkit_commentType = "C++"
