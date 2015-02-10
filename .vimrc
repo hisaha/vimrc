@@ -28,7 +28,7 @@ Bundle 'alfredodeza/pytest.vim'
 Bundle 'reinh/vim-makegreen'
 Bundle 'vim-scripts/The-NERD-tree'
 Bundle 'scrooloose/nerdcommenter'
-" Bundle 'sontek/rope-vim'
+" Bundle 'python-rope/ropevim'
 Bundle 'vim-scripts/DoxygenToolkit.vim'
 Bundle 'Chiel92/vim-autoformat'
 " Bundle 'tmhedberg/SimpylFold'
@@ -93,3 +93,14 @@ vmap <silent> <C-K> <Plug>NERDCommenterToggle
 
 "Doxygen
 let g:DoxygenToolkit_commentType = "C++"
+
+"highlight color
+highlight clear SpellBad
+highlight SpellBad term=standout ctermfg=1 term=underline cterm=underline
+highlight clear SpellCap
+highlight SpellCap term=underline cterm=underline
+highlight clear SpellRare
+highlight SpellRare term=underline cterm=underline
+highlight clear SpellLocal
+highlight SpellLocal term=underline cterm=underline
+
