@@ -28,7 +28,7 @@ Bundle 'alfredodeza/pytest.vim'
 Bundle 'reinh/vim-makegreen'
 Bundle 'vim-scripts/The-NERD-tree'
 Bundle 'scrooloose/nerdcommenter'
-Bundle 'python-rope/ropevim'
+" Bundle 'python-rope/ropevim'
 Bundle 'vim-scripts/DoxygenToolkit.vim'
 Bundle "Chiel92/vim-autoformat"
 
