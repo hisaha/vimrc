@@ -16,9 +16,9 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'msanders/snipmate.vim'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-git'
-Bundle 'ervandew/supertab'
+" Bundle 'ervandew/supertab'
 " Bundle 'sontek/minibufexpl.vim'
-Bundle 'wincent/Command-T'
+" Bundle 'wincent/Command-T'
 Bundle 'mitechie/pyflakes-pathogen'
 Bundle 'mileszs/ack.vim'
 Bundle 'sjl/gundo.vim'
@@ -28,9 +28,14 @@ Bundle 'alfredodeza/pytest.vim'
 Bundle 'reinh/vim-makegreen'
 Bundle 'vim-scripts/The-NERD-tree'
 Bundle 'scrooloose/nerdcommenter'
-Bundle 'sontek/rope-vim'
+" Bundle 'sontek/rope-vim'
 Bundle 'vim-scripts/DoxygenToolkit.vim'
-Bundle "Chiel92/vim-autoformat"
+Bundle 'Chiel92/vim-autoformat'
+" Bundle 'tmhedberg/SimpylFold'
+Bundle 'python_fold'
+
+Bundle "mgedmin/pythonhelper.vim"
+set statusline=%<%f\ %h%m%r\ %1*%{TagInStatusLine()}%*%=%-14.(%l,%c%V%)\ %P
 
 filetype off
 "call pathogen#incubate()
@@ -74,6 +79,7 @@ let tlist_objc_settings='objc;P:protocols;i:interfaces;I:implementations;M:insta
 
 "NERDTree
 let NERDTreeShowHidden = 1
+let NERDTreeChDirMode=2
 let file_name = expand("%:p")
 if has('vim_starting') &&  file_name == ""
     autocmd VimEnter * execute 'NERDTree ./'
